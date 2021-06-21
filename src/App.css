@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap");
+body {
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 280px;
+  color: #3a294b;
+  border: solid #3a294b 1px;
+  -webkit-box-shadow: -3px 3px 9px #3a294b;
+          box-shadow: -3px 3px 9px #3a294b;
+  border-radius: 3px;
+}
+
+.container img {
+  border-radius: 3px;
+}
+
+#img-box {
+  margin-top: 40px;
+  height: 280px;
+}
+
+#quote-box {
+  margin-top: 10px;
+  min-height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "quote quote" "author author" "button button";
+}
+
+#text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: quote;
+  font-family: "Bellota Text";
+  margin: 20px 15px 10px 15px;
+  font-size: 18px;
+}
+
+#author {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: author;
+  font-family: "Berkshire Swash";
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 0px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  min-width: 110px;
+  text-align: center;
+  border: solid #3a294b 1px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 3px #3a294b;
+          box-shadow: 0px 3px #3a294b;
+  padding: 6px;
+  background-color: #f1e551;
+  font-size: 15px;
+  cursor: pointer;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: button;
+  margin: 20px 10px 20px auto;
+}
+
+button:hover {
+  background-color: #f88ca6;
+}
+
+#copyright {
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-family: "Bellota Text";
+  font-size: 14px;
+  line-height: 10px;
+}
+
+@media screen and (max-height: 700px) {
+  #copyright {
+    position: relative;
+    padding: 5px 0px;
+    margin-top: 20px;
+  }
+}
+
+#copyright a {
+  color: #3a294b;
+  background-color: #f1e551;
+}
+
+#copyright a:hover, #copyright a:active {
+  background-color: #f88ca6;
+}
+/*# sourceMappingURL=App.css.map */
