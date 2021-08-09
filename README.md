@@ -5,9 +5,8 @@ A cute Sailor Moon random quote machine to add some love and moon power to your 
 ## Built with 
 
 - HTML
-- CSS & SCSS (SASS). I use the awesome [Kitty Giraudel's Sass Boilerplate](https://github.com/KittyGiraudel/sass-boilerplate)
-- Javascript
-- ReactJS
+- CSS & SCSS (SASS)
+- Javascript (ReactJS)
 
 ## What's next to do?
 - add a share button to instagram or twitter.
