@@ -18,7 +18,7 @@ A cute Sailor Moon random quote machine to add some love and moon power to your 
 ---|
 [Marina Kinalone Simonnet](https://github.com/marinakinalone) |
 
-## [License](https://github.com/marinakinalone/kinalonedev/blob/main/LICENSE.txt)
+## [License](https://github.com/marinakinalone/sailor-moon-quote-machine/blob/main/LICENSE.txt)
 
 MIT © [Marina Kinalone Simonnet](https://github.com/marinakinalone)
 
