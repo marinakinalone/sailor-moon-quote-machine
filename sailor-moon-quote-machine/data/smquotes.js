@@ -1,5 +1,5 @@
 
-export const sailorMoonQuotes = [
+export const quotes = [
   {
     "id": 0,
     "text": "Be pure, be honest, be beautiful.",
