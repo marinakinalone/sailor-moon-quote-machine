@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     const getQuoteAndColor = () => {
       setQuoteNb(randomize(quotes.length));
-      setColorNb(randomize(colors.length))
+      setColorNb(randomize(colors.length));
       setTimeout(() => {
         setLoading(false)
       }, 500)
@@ -27,7 +27,10 @@ const Home: NextPage = () => {
      getQuoteAndColor();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading])
-  const handleClick = () => true;
+  const handleClick = () => {
+    setQuoteNb(randomize(quotes.length));
+    setColorNb(randomize(colors.length));
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -38,13 +41,18 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         {loading? (<></>):(
         <>
-        {/* <section className="container" id="img-box">
-          <img src={arrayOfImg[this.state.quoteNb]} alt="sailor moon illustration" />
-        </section> */}
+        <section className="container" id="img-box">
+          <Image
+            src={`/resources/screenshots/${quoteNb}.png`}
+            alt="screenshot from the sailor moon anime"
+            width="100%"
+            height="100%"
+          />
+        </section>
         <section className="container" id="quote-box" style={{backgroundColor: colors[colorNb]}}>
           <p id="text">{quotes[quoteNb].text}</p>
           <p id="author">- {quotes[quoteNb].author}</p>
-          {/* <button onClick={handleClick()} id="new-quote">new quote</button> */}
+          <button onClick={() => handleClick()} id="new-quote">new quote</button>
         </section>
         </>
         )}
