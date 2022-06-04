@@ -5,6 +5,7 @@ import { quotes } from '../data/smquotes';
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css'
+import cx from 'classnames';
 
 const Home: NextPage = () => {
   const [quoteNb, setQuoteNb] = useState(0)
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
     setColorNb(randomize(colors.length));
   };
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Sailor Moon Quote Machine</title>
         <meta name="description" content="a machine that generates random sailor moon quotes" />
@@ -41,18 +42,18 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         {loading? (<></>):(
         <>
-        <section className="container" id="img-box">
+        <section className={ cx(styles.container, styles.container__img)}>
           <Image
             src={`/resources/screenshots/${quoteNb}.png`}
             alt="screenshot from the sailor moon anime"
-            width="100%"
-            height="100%"
+            width="280px"
+            height="280px"
           />
         </section>
-        <section className="container" id="quote-box" style={{backgroundColor: colors[colorNb]}}>
-          <p id="text">{quotes[quoteNb].text}</p>
-          <p id="author">- {quotes[quoteNb].author}</p>
-          <button onClick={() => handleClick()} id="new-quote">new quote</button>
+        <section className={cx(styles.container, styles.container__quote)} style={{backgroundColor: colors[colorNb]}}>
+          <p className={styles.container__text}>{quotes[quoteNb].text}</p>
+          <p className={styles.container__author}>- {quotes[quoteNb].author}</p>
+          <button className={styles.container__button} onClick={() => handleClick()} id="new-quote">new quote</button>
         </section>
         </>
         )}
@@ -63,7 +64,7 @@ const Home: NextPage = () => {
         <p>illustrations from <a href="https://sailormoonscreencaps.tumblr.com" target="_blank">sailor moon screencaps</a></p>
         <p>sailor moon quote machine by <a href="https://kinalone.dev" target="_blank">mks</a></p>
       </footer>
-    </div>
+    </>
   )
 }
 
