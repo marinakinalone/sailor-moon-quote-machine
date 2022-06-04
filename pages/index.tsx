@@ -67,8 +67,8 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <p>illustrations from <a href="https://sailormoonscreencaps.tumblr.com" target="_blank">sailor moon screencaps</a></p>
-        <p>sailor moon quote machine by <a href="https://kinalone.dev" target="_blank">mks</a></p>
+        <p>illustrations from <a href="https://sailormoonscreencaps.tumblr.com" target="_blank" rel="noreferrer">sailor moon screencaps</a></p>
+        <p>sailor moon quote machine by <a href="https://kinalone.dev" target="_blank" rel="noreferrer">mks</a></p>
       </footer>
     </>
   )

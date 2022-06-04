@@ -10,14 +10,12 @@ $hover: #f88ca6;
 .main {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     margin: 0 auto;
     height: 100vh;
 }
 
 .container {
     width: 280px;
-    
     color: $main_color_dark;
     border: solid $main_color_dark 1px;
     box-shadow: -3px 3px 9px $main_color_dark;
@@ -26,7 +24,7 @@ $hover: #f88ca6;
 
 .container__img {
    height: 280px;
-   margin-top: 5rem;
+   margin-top: 40px;
 }
 
 .container__quote {

@@ -7,7 +7,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
   margin: 0 auto;
   height: 100vh;
 }
@@ -23,7 +22,7 @@
 
 .container__img {
   height: 280px;
-  margin-top: 5rem;
+  margin-top: 40px;
 }
 
 .container__quote {
