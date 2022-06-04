@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap");
+html,
+body {
+  padding: 0;
+  background-image: url(../public/resources/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Bellota Text", sans-serif;
+}
+
+html *,
+body * {
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=globals.css.map */

@@ -1,14 +1,26 @@
 # Sailor Moon Quote Machine
 A cute Sailor Moon random quote machine to add some love and moon power to your life!
 ## Built with 
-- HTML
-- CSS & SCSS (SASS)
-- Javascript (ReactJS)
+- Next JS
+- SASS
+- CSS modules
+
+## Deployment
+[client](https://)
+## Installation
+
+```bash
+npm i
+npm run start
+```
 ## What's next to do?
-- add a share button to instagram or twitter.
-- refactor code to use function-based components
+- store the quotes in a database (it would be fun to make this an api!)
+- improve the responsiveness
+- improve the loading state
+- Find a new technology to learn and experiment with it on that project :)
 ## What I have learned from this project
-- todo
+This project was my first web app created from scratch using React. It's a little bit embarrassing to read, but hey, we've got to start somewhere... Since this project is very simple, I decided to use it as a playground to familiarize myself with new technologies I want to try. From a React class-based components project, I converted the whole project to Next JS.
+One cool thing I learned is how to use the classnames utility to add multiple classnames with CSS modules in React!
 ## Team
 
 [![Marina Kinalone Simonnet](https://avatars.githubusercontent.com/u/63544936?v=3&s=144)](https://github.com/marinakinalone) |
