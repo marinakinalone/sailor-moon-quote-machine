@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 
-.container__button:hover, .container__button:focus {
+.container__button:hover {
   background-color: #f88ca6;
 }
 

@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   const randomize = (length: number) => {
     let random = Math.floor(Math.random() * length);
     return random
-  } //TODO move it to another file :)
+  }
 
   useEffect(() => {
     const getQuoteAndColor = () => {
@@ -29,8 +29,14 @@ const Home: NextPage = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading])
   const handleClick = () => {
-    setQuoteNb(randomize(quotes.length));
-    setColorNb(randomize(colors.length));
+    let quoteIndex = quoteNb;
+    let colorIndex = colorNb;
+    while (quoteIndex === quoteNb && colorIndex === colorNb) {
+      quoteIndex = randomize(quotes.length)
+      colorIndex = randomize(colors.length)
+    }
+    setQuoteNb(quoteIndex);
+    setColorNb(colorIndex);
   };
   return (
     <>

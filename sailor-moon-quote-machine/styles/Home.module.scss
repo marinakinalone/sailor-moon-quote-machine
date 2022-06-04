@@ -62,8 +62,7 @@ $hover: #f88ca6;
     background-color: $accent_color;
     font-size: 15px;
     cursor: pointer;
-    &:hover,
-    &:focus {
+    &:hover {
         background-color: $hover;
     }
 }
