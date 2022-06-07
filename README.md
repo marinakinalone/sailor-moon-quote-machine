@@ -6,7 +6,7 @@ A cute Sailor Moon random quote machine to add some love and moon power to your 
 - CSS modules
 
 ## Deployment
-[client](https://)
+[deployed on vercel](https://sailor-moon-quote-machine.vercel.app/)
 ## Installation
 
 ```bash
