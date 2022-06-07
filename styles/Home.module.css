@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 .main {
+  margin: 0 auto;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,8 +9,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
-  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__container {
+  margin-top: -7rem;
 }
 
 .container {
@@ -22,7 +29,6 @@
 
 .container__img {
   height: 280px;
-  margin-top: 40px;
 }
 
 .container__quote {

@@ -8,12 +8,15 @@ $hover: #f88ca6;
 
 
 .main {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
+.main__container {
+    margin-top: -7rem;
+}
 .container {
     width: 280px;
     color: $main_color_dark;
@@ -24,7 +27,6 @@ $hover: #f88ca6;
 
 .container__img {
    height: 280px;
-   margin-top: 40px;
 }
 
 .container__quote {

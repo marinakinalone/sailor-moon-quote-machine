@@ -47,7 +47,7 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         {loading? (<></>):(
-        <>
+        <div className={styles.main__container}>
         <section className={ cx(styles.container, styles.container__img)}>
           <Image
             src={`/resources/screenshots/${quoteNb}.png`}
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           <p className={styles.container__author}>- {quotes[quoteNb].author}</p>
           <button className={styles.container__button} onClick={() => handleClick()} id="new-quote">new quote</button>
         </section>
-        </>
+        </div>
         )}
     
       </main>
