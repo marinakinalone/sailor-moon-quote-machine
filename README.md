@@ -19,7 +19,7 @@ npm run start
 - improve the loading state
 - Find a new technology to learn and experiment with it on that project :)
 ## What I have learned from this project
-This project was my first web app created from scratch using React. It's a little bit embarrassing to read, but hey, we've got to start somewhere... Since this project is very simple, I decided to use it as a playground to familiarize myself with new technologies I want to try. From a React class-based components project, I converted the whole project to Next JS.
+This project was my first web app created from scratch using React. The first version of the code was little bit embarrassing to read (but hey, we've got to start somewhere...), so I decided to refactor the code a little bit. Since this project is very simple, I decided to use it as a playground to familiarize myself with new technologies I want to try. From a React class-based components project, I converted the whole project to Next JS (and functional components!).
 One cool thing I learned is how to use the classnames utility to add multiple classnames with CSS modules in React!
 ## Team
 
