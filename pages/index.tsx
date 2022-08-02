@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         </div>
         ):(
         <div className={styles.main__container}>
-        <section className={ cx(styles.container, styles.container__img)}>
+        <section className={ cx(styles.container, styles.container__img)} style={{backgroundColor: colors[colorNb]}}>
           <Image
             src={`/resources/screenshots/${quoteNb}.png`}
             alt="screenshot from the sailor moon anime"
