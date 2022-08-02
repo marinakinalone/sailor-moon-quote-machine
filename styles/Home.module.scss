@@ -88,7 +88,6 @@ $hover: #f88ca6;
 }
 
 .container__loader {
-    background-color: pink;
     display: flex;
     align-items: center;
 }
@@ -101,7 +100,7 @@ $hover: #f88ca6;
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;
-    animation: animloader 1s linear infinite;
+    animation: animloader 1.7s linear infinite;
   }
   
   @keyframes animloader {

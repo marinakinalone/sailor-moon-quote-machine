@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       setColorNb(randomize(colors.length));
       setTimeout(() => {
         setLoading(false)
-      }, 1000)
+      }, 2000)
      }
      getQuoteAndColor();
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -40,10 +40,10 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         {loading? (
-        <>
+        <div className={styles.main__container}>
           <section className={ cx(styles.container, styles.container__img, styles.container__loader)} style={{backgroundColor: colors[randomize(colors.length)]}}><div className={styles.loader}></div></section>
           <section className={ cx(styles.container, styles.container__quote, styles.container__loader)} style={{backgroundColor: colors[randomize(colors.length)]}}><div className={styles.loader}></div></section>
-        </>
+        </div>
         ):(
         <div className={styles.main__container}>
         <section className={ cx(styles.container, styles.container__img)}>
