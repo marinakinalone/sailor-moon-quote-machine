@@ -4,7 +4,7 @@ import { colors } from '../data/colors';
 import { quotes } from '../data/smquotes';
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import cx from 'classnames';
 
 const Home: NextPage = () => {
@@ -23,20 +23,13 @@ const Home: NextPage = () => {
       setColorNb(randomize(colors.length));
       setTimeout(() => {
         setLoading(false)
-      }, 500)
+      }, 1000)
      }
      getQuoteAndColor();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading])
   const handleClick = () => {
-    let quoteIndex = quoteNb;
-    let colorIndex = colorNb;
-    while (quoteIndex === quoteNb && colorIndex === colorNb) {
-      quoteIndex = randomize(quotes.length)
-      colorIndex = randomize(colors.length)
-    }
-    setQuoteNb(quoteIndex);
-    setColorNb(colorIndex);
+    setLoading(true)
   };
   return (
     <>
@@ -46,7 +39,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {loading? (<></>):(
+        {loading? (
+        <>
+          <section className={ cx(styles.container, styles.container__img, styles.container__loader)} style={{backgroundColor: colors[randomize(colors.length)]}}><div className={styles.loader}></div></section>
+          <section className={ cx(styles.container, styles.container__quote, styles.container__loader)} style={{backgroundColor: colors[randomize(colors.length)]}}><div className={styles.loader}></div></section>
+        </>
+        ):(
         <div className={styles.main__container}>
         <section className={ cx(styles.container, styles.container__img)}>
           <Image
